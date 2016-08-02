@@ -1,0 +1,18 @@
+-When you’re into the elevator position yourself next to the navigational buttons.
+	- Decide what floor you need to go to
+	- Press the button corresponding to the floor you need
+	- Wait in the elevator until the doors close and take you to the correct floor
+	-When doors open walk out 
+-if your floor number is not there
+	-get out of elevator 
+	-ask for help
+
+Making Tea Algorithm Pseudocode 
+-If there isn’t any tea in my mug
+	-boil water in a pot
+	-put tea leaves in tea infuser 
+	-put tea infuser in mug
+	-pour in water from the pot
+	-wait 5 minutes 
+-otherwise 
+	-drink tea
