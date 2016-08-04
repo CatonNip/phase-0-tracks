@@ -6,13 +6,31 @@
 
 def encrypt(message)
 	encrypted_message = ""
-	index = 0 
-	while index < message.length
-		encrypted_message = encrypted_message + message[index].next[-1]
-		index += 1	
+	char_index = 0 
+	while char_index < message.length
+		if message[char_index] != " "
+			encrypted_message = encrypted_message + message[char_index].next[-1]
+		else
+			encrypted_message = encrypted_message + message[char_index]
+		end
+		char_index += 1	
 	end
 	encrypted_message
 end
 
-message = "abcz"
-p encrypt(message)
+
+def decrypt(message)
+	decrypted_message = "" 
+	char_index = 0
+	alpha = "abcdefghijklmnopqrstuvwxyz" 
+	while char_index < message.length
+		if 	message[char_index] != " "
+			position = alpha.index(message[char_index])
+			decrypted_message = decrypted_message + alpha[position - 1]
+		else
+			decrypted_message = decrypted_message + message[char_index]
+		end
+		char_index += 1	
+	end
+	decrypted_message
+end
