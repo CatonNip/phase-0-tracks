@@ -15,14 +15,23 @@
 # => Release 1
 #This assigment just screams loops.
 	#Write a loop that ends when the user enters 'quit'
+# => Release 2
+#store the last entered name into a data structure 
+#print out original and new names
 #######
 
 def agent_real_name
-	puts "Hello there Agent. Please enter your first name. If you daaare!!!"
+	puts "Hello there Agent. Please enter your first name or type 'quit' to end the program."
 		firstname = gets.chomp.downcase
+			if firstname == 'quit'
+				abort
+			end
 # => here is where my code kept breaking until I compined the stings into a variable
-	puts "Now enter your last name."
+	puts "Now enter your last name or type 'quit' to end the program.."
 		lastname = gets.chomp.downcase
+			if lastname == 'quit'
+				abort
+			end
 	name = lastname + " " + firstname
 end
 
@@ -46,12 +55,10 @@ def vowels_consonants(letter)
 	end
 end
 
-p agents_alias(agent_real_name).capitalize
-
 name = ""
 until name == 'quit'
-	puts "Enter a new name or type 'quit' to end the program."
-	name = gets.chomp.downcase
-
+	p agents_alias(agent_real_name).capitalize
 end
+
+
 	
