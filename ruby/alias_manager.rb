@@ -1,4 +1,5 @@
 ####Pseudocode####
+# => Release 0
 #prompt the agent to input their name
 #save that name into a data stucture 
 #create small methods so you can link them together
@@ -11,6 +12,9 @@
 	#tell me if an item on a data structure is a vowel
 	#tell me if an item on a data stucture is a consonant
 	#convert the user's original name into an alias 
+# => Release 1
+#This assigment just screams loops.
+	#Write a loop that ends when the user enters 'quit'
 #######
 
 def agent_real_name
@@ -42,4 +46,12 @@ def vowels_consonants(letter)
 	end
 end
 
-puts agents_alias(agent_real_name).capitalize	
+p agents_alias(agent_real_name).capitalize
+
+name = ""
+until name == 'quit'
+	puts "Enter a new name or type 'quit' to end the program."
+	name = gets.chomp.downcase
+
+end
+	
