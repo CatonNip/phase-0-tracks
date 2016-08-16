@@ -1,6 +1,7 @@
 class Santa
 	attr_reader :reindeer_ranking, :ethnicity
 	attr_accessor :gender, :age
+	
 	def initialize(gender,ethnicity)
 		puts "initializing Santa instance..."
 		@gender = gender
@@ -28,17 +29,6 @@ class Santa
 		@reindeer_ranking << reindeer
 		p @reindeer_ranking
 	end
-	#getter methods
-	# def age
-	# 	@age
-	# end
-	# def ethnicity
-	# 	@ethnicity
-	# end
-	#setter method
-	# def gender=(new_gender)
-	# 	@gender = new_gender
-	# end
 end
 
 santas = []
@@ -50,19 +40,3 @@ until santas.length == 100
 end
 p santas
 
-
-
-# santas << Santa.new("agender", "black")
-# santas << Santa.new("female", "Latino")
-# santas << Santa.new("bigender", "white")
-# santas << Santa.new("male", "Japanese")
-# santas << Santa.new("female", "prefer not to say")
-# santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
-# santas << Santa.new("N/A", "N/A")
-
-Frank = Santa.new("non-binary","French")
-cookie = "chocolate chip"
-Frank.speak
-Frank.eat_milk_and_cookies(cookie)
-Frank.get_mad_at("Dasher")
-Frank.celebrate_brithday
