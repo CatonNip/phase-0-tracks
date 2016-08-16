@@ -6,7 +6,7 @@ class Santa
 		@gender = gender
 		@ethnicity = ethnicity
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		@age = 0
+		@age = rand(140)
 	end
 
 	def speak
@@ -45,7 +45,7 @@ santas = []
 example_genders = ["non-binary","agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-until santas.length == 3
+until santas.length == 100
   santas << Santa.new(example_genders.sample, example_ethnicities.sample)
 end
 p santas
