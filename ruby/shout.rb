@@ -22,6 +22,13 @@ module Shout
 	end
 end
 
+class Donald_Trump_Supporters
+	include Shout
+end
+
+class Angry_Gamers
+	include Shout
+end
 
 
 
