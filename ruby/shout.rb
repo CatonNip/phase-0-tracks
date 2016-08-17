@@ -29,6 +29,12 @@ end
 class Angry_Gamers
 	include Shout
 end
+#driver code
+donald = Donald_Trump_Supporters.new 
+p donald.shouting("Make AMERRRICA GREAT AGAIN")
+
+toxic = Angry_Gamers.new
+p toxic.shouting("UGH THIS TEAM SUCKS")
 
 
 
