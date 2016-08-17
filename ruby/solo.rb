@@ -23,11 +23,27 @@ class Pokemon
 		puts "Who's...that...POKEMON?!"
 		#assign attributes
 		@name = name 
-		@type = ["fire","water","grass","ghost","psychic"]
-		@weakness = ["fire","water","grass","ghost","psychic"]
-		@attack = ["FLAMETHROWER and lights a house on fire.","SURF and surfs away.",
-				"RAZOR LEAF and cuts itself.","LICK and creeps out their opponent.",
-				"HYPOSIS and tricks you into buying them a diet coke."]
+
+		@type = ["fire","water","grass","ghost","psychic","bug","dragon","ice","fighting",
+				"flying","ground","electic","normal","poison","rock"]
+
+		@weakness = ["fire","water","grass","ghost","psychic","bug","dragon","ice","fighting",
+					"flying","ground","electic","normal","poison","rock"]
+
+		@attack =	["FLAMETHROWER and lights a house on fire.","SURF and surfs away.",
+					"RAZOR LEAF and cuts itself.","LICK and creeps out their opponent.",
+					"HYPNOSIS and tricks you into buying them a diet coke.",
+					"STRING SHOT and feels really insecure with themselves.",
+					"DRAGON RAGE and leaves a mean comment on your youtube channel.",
+					"BLIZZARD and creates a new expansion pack for World of Warcraft.",
+					"SEISMIC TOSS but isn't able to lift their opponent off the ground.",
+					"GUST and gets sand in their eye. OUCH!", 
+					"DIG and buries their head in the ground.",
+					"THUNDERBOLT and that is how mankind discovered electricity.",
+					"SELF DESTRUCT and forgets to save and commit their work to github.",
+					"TOXIC and plays League of Legends.",
+					"ROCK THROW and throws a pebble at their opponent."
+				]
 	end
 
 	def pokemon_type
