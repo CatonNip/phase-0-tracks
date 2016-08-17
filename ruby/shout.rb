@@ -3,7 +3,11 @@ module Shout
     words + "!!!" + " :("
   end
 
-  def yelling_happily(words)
+  def self.yelling_happily(words)
   	words + "<3" + " ;D"
   end
 end
+
+#DRIVER CODE
+p Shout.yell_angrily("DARN!")
+p Shout.yelling_happily("YAY!")
