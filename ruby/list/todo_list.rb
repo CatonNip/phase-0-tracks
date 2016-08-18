@@ -11,4 +11,8 @@ class TodoList
 	def add_item(string)
 		@list << string 
 	end
+
+	def delete_item(string)
+		@list.delete(string)
+	end
 end
