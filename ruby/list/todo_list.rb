@@ -5,7 +5,7 @@ class TodoList
 	end
 
 	def get_items
-		@list[index]
+		@list
 	end
 
 	def add_item(string)
@@ -16,5 +16,7 @@ class TodoList
 		@list.delete(string)
 	end
 
-
+	def get_index(index)
+		@list[index]
+	end
 end
