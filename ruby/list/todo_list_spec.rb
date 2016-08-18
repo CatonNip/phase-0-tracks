@@ -19,6 +19,6 @@ describe TodoList do
   end
 
   it "retrieves an item by index" do
-    expect(list.get_item(0)).to eq "do the dishes"
+    expect(list.get_index(0)).to eq "do the dishes"
   end
 end
