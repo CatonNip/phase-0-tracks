@@ -8,6 +8,17 @@
   # print the list to the console [can you use one of your other methods here?]
 # output: HASH
 
+def create_list(string)
+	grocery_hash = {}
+	the_list = string.split
+	the_list.each do |item|
+		grocery_hash[item] = 1
+	end
+	p grocery_hash
+end
+create_list("carrots apples cereal pizza")
+
+
 # Method to add an item to a list
 # input: item name and optional quantity
 # steps: 
@@ -32,3 +43,7 @@
 # steps: 
   # Iterate through the hash and print EACH key, value pair in a sentence
 # output: Printed grocery list
+
+
+
+
