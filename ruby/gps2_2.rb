@@ -31,12 +31,25 @@ def add_item(item,quantity,new_list)
 	p new_list
 end
 
-p add_item("orange",2,new_list)
+# p add_item("orange",2,new_list)
 
 # Method to remove an item from the list
 # input: Item to remove and quantity
 # steps: Delete key and value
 # output: Updated hash with removed item / quantity
+
+def remove_item(item,new_list)
+	if new_list.has_key?(item) == true
+		new_list.delete(item)
+	else
+		puts "ERROR."
+	end
+
+	p new_list
+end
+
+# remove_item("carrots",new_list)
+
 
 # Method to update the quantity of an item
 # input: item name and quantity
