@@ -14,11 +14,8 @@ def create_list(string)
 	the_list.each do |item|
 		grocery_hash[item] = 1
 	end
-	p grocery_hash
+	print_list(grocery_hash)
 end
-
-new_list = create_list("carrots apples cereal pizza")
-
 
 # Method to add an item to a list
 # input: item name and optional quantity
@@ -30,8 +27,6 @@ def add_item(item,quantity,new_list)
 	new_list[item] = quantity
 	p new_list
 end
-
-# p add_item("orange",2,new_list)
 
 # Method to remove an item from the list
 # input: Item to remove and quantity
@@ -48,9 +43,6 @@ def remove_item(item,new_list)
 	p new_list
 end
 
-# remove_item("carrots",new_list)
-
-
 # Method to update the quantity of an item
 # input: item name and quantity
 # steps: 
@@ -58,11 +50,33 @@ end
   #Update item value
 # output: Hash with updated quantity
 
+def update_quantity(item,quantity,new_list)
+	new_list[item] = quantity
+	p new_list
+end
+
 # Method to print a list and make it look pretty
 # input: Grocery Hash
 # steps: 
   # Iterate through the hash and print EACH key, value pair in a sentence
 # output: Printed grocery list
+
+def print_list(new_list)
+	new_list.each do |key,value|
+		puts "#{value} #{key}"
+	end
+end
+
+new_list = create_list("carrots apples cereal pizza")
+p add_item("orange",2,new_list)
+remove_item("carrots",new_list)
+update_quantity("potatoes",100,new_list)
+print_list(new_list)
+
+
+
+
+
 
 
 
