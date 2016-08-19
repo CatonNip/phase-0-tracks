@@ -16,15 +16,22 @@ def create_list(string)
 	end
 	p grocery_hash
 end
-create_list("carrots apples cereal pizza")
+
+new_list = create_list("carrots apples cereal pizza")
 
 
 # Method to add an item to a list
 # input: item name and optional quantity
 # steps: 
   # Add new item and quantity to hash
-
 # output: HASH
+
+def add_item(item,quantity,new_list)
+	new_list[item] = quantity
+	p new_list
+end
+
+p add_item("orange",2,new_list)
 
 # Method to remove an item from the list
 # input: Item to remove and quantity
