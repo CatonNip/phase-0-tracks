@@ -4,8 +4,8 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# Require Relative links this ruby file to a near relative file
+# Require goes to the core built in profile
 require_relative 'state_data'
 
 class VirusPredictor
