@@ -6,3 +6,12 @@
 		// CONCATENATE each CHARACTER on the VARIABLE
 	// RETURN the changed VARIABLE
 // Output: STRING with characters reversed 
+
+function reverse(string) {
+	var reversed_string = "";
+}
+
+
+
+
+// Driver Code //
