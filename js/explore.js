@@ -15,13 +15,14 @@ function reverse(string) {
 	return reversed_string;
 }
 
-
-
-
 // Driver Code //
-console.log(reverse("Meow"))
+console.log(reverse("MEOW"));
 
-
+// Add driver code that prints the variable if some condition is true
+var reverse_dog = reverse("WOOF");
+if (6 <= 99) {
+	console.log(reverse_dog)
+}
 
 // Test Code //
 // var code = "String!"
