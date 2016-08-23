@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [with: ].
-# We spent [1] hours on this challenge.
+# I worked on this challenge [with: Kelvin Lightner].
+# We spent [1.5] hours on this challenge.
 
 # Explanation of Require Relative
 # Require Relative links this ruby file to a near relative file
@@ -104,8 +104,19 @@ p states["Washington"].virus_effects
 #=======================================================================
 # Reflection Section
 # What are the differences between the two different hash syntaxes shown in the state_data file?
-# What does require_relative do? How is it different from require?
-# What are some ways to iterate through a hash?
-# When refactoring virus_effects, what stood out to you about the variables, if anything?
-# What concept did you most solidify in this challenge?
+# => There are two differnt hash syntaxes in used here. When assigning a string as a key you have to use this "=>" syntax. 
+# => When assining  a symbol as a key you use ":" this syntax.
 
+# What does require_relative do? How is it different from require?
+# => Require Relative links this ruby file to a near relative file.
+# => Require goes to the core built in profile.
+
+# What are some ways to iterate through a hash?
+# => You can used to built in method .each, .each_value, .each_pair.
+# => You can also use keys in a foreach loop.
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# => Something that really stood out to me was that the state parameter that was in speed_of_spread wasn't even being used.
+
+# What concept did you most solidify in this challenge?
+# => Something that I really solidified durring this challenge was intterating though a hash.
