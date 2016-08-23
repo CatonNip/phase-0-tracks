@@ -9,6 +9,7 @@
 
 function reverse(string) {
 	var reversed_string = "";
+
 }
 
 
