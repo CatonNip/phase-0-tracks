@@ -11,6 +11,16 @@
 		// CONCENTRATE each STRING into the set VARIABLE
 	//Print the variable that should contain the longest element in the list
 
+//Release 1//
+//Goals//
+//Write a FUNCTION that takes two OBJECTS and checks to see if the objects share at least one key-value pair.
+//Try to reason through the problem using the basics you've already learned.
+//Add some driver code that tests both outcomes of your function.
+
+//Psudocode//
+
+
+
 function longestElement(array) {
 	var longest = 0;
 	var longestPhrase = "";
@@ -25,11 +35,13 @@ function longestElement(array) {
 
 
 //Driver Code//
-var test1 = ["long phrase","longest phrase","longer phrase"];
-longestElement(test1);
 
-var test2 = ["WOOOF","MEOW","TWEET TWEET","MOO"];
-longestElement(test2);
+//Release 0//
+// var test1 = ["long phrase","longest phrase","longer phrase"];
+// longestElement(test1);
 
-var test3 = ["Popcorn", "Banananananannananana", "Pancake","Oreo"];
-longestElement(test3);
+// var test2 = ["WOOOF","MEOW","TWEET TWEET","MOO"];
+// longestElement(test2);
+
+// var test3 = ["Popcorn", "Banananananannananana", "Pancake","Oreo"];
+// longestElement(test3);
