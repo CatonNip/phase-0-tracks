@@ -27,12 +27,14 @@ console.log(horses)
 
 // Release 2 Constructor Functions //
 // Pseudocode //
+
 //GOALS//
 // Write a constructor FUNCTION for cars
 // Give a few different properties of various DATA TYPES
 // Look for PROPERTIES that all cars have in common 
 // Include at least one FUNCTION
 // CALL function to create multiple cars 
+
 // Builder Code //
 // Declare a FUNCTION that takes PROPORTIES as PARAMETERS
 	// Use "this" keyword to create PROPERTIES for cars
@@ -40,5 +42,12 @@ console.log(horses)
 	// Print an ending INITIALIZATION statement 
 //end
 
+function Car(make,year,isElectric) {
+	this.make =  make;
+	this.year = year;
+	this.isElectric = isElectric;
+	this.drive = function() {console.log("VROOM VROOM");};
+	console.log("CAR INITIALIZATION COMPLETE!")	
+}
 
 
