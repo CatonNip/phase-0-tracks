@@ -24,3 +24,11 @@ for (var i = 0; i < horseNames.length; i++){
 console.log(horseColors)
 console.log(horseNames)
 console.log(horses)
+
+// Release 2 Constructor Functions //
+//GOALS//
+// Write a constructor FUNCTION for cars
+// Give a few different properties of various DATA TYPES
+// Look for PROPERTIES that all cars have in common 
+// Include at least one FUNCTION
+// CALL function to create multiple cars 
