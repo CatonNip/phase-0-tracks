@@ -39,7 +39,9 @@ function longestElement(array) {
 }
 
 //Release 1//
+function find_key_value_match(object1,object2) {
 
+}
 
 
 
@@ -54,3 +56,7 @@ function longestElement(array) {
 
 // var test3 = ["Popcorn", "Banananananannananana", "Pancake","Oreo"];
 // longestElement(test3);
+
+//Release 1//
+var testObject1 = {book: "Ready Player One", "age":33, food: "banana"};
+var testObject2 = {"age":33, car:"BMW"};
