@@ -37,6 +37,7 @@
 	//Declare an empty LIST so that we can PUSH the strings into it
 	//Declare a LIST of random words of varying lengths(or find a method that does this)
 	//FOR INT create that many number of elements and PUSH to empty List
+	//
 //print results
 
 //Release 0//
@@ -62,6 +63,15 @@ function findKeyValueMatch(object1,object2,key) {
 }
 
 //Release 2//
+function randomTestData(int){
+	var testDataArray = [];
+	var randomWords = ["a","df","sad","rtyu","sawer","serfed","vgfrtyh","weikndfr","thfuipsqe","qweryhfndg"];
+	var randomNumber = Math.floor((Math.random() * 10) + 1);
+	for (var i = 0; i < randomWords.length; i++) {
+		testDataArray.push(randomWords)
+	}
+	console.log(testDataArray)
+}
 
 //Driver Code//
 
@@ -89,4 +99,5 @@ function findKeyValueMatch(object1,object2,key) {
 // findKeyValueMatch(testObject5,testObject6,"name");
 
 //Release 2//
-
+var testInt1 = 5
+randomTestData(testInt1)
