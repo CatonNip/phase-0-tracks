@@ -39,7 +39,7 @@ function longestElement(array) {
 }
 
 //Release 1//
-function find_key_value_match(object1,object2,key) {
+function findKeyValueMatch(object1,object2,key) {
 		if (object1[key] == object2[key]){
 			console.log(true)
 		} else {
@@ -64,4 +64,4 @@ function find_key_value_match(object1,object2,key) {
 //Release 1//
 var testObject1 = {name: "Steven", age: 54};
 var testObject2 = {name: "Tamir", age: 54};
-find_key_value_match(testObject1,testObject2,"age");
+findKeyValueMatch(testObject1,testObject2,"age");
