@@ -18,9 +18,14 @@
 //Add some driver code that tests both outcomes of your function.
 
 //Psudocode//
+//Declare a FUNCTION that takes two OBJECTS as parameters
+	//LOOP though each item in an object
+		//compare two objects to see if any of their key-value pairs match up
+		//IF any of the key-value pairs match up then the match is TRUE
+		//ELSE the match is false
+	// Print results
 
-
-
+//Release 0//
 function longestElement(array) {
 	var longest = 0;
 	var longestPhrase = "";
@@ -32,6 +37,10 @@ function longestElement(array) {
 	}
 	console.log(longestPhrase);
 }
+
+//Release 1//
+
+
 
 
 //Driver Code//
