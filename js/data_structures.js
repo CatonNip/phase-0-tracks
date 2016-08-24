@@ -26,9 +26,19 @@ console.log(horseNames)
 console.log(horses)
 
 // Release 2 Constructor Functions //
+// Pseudocode //
 //GOALS//
 // Write a constructor FUNCTION for cars
 // Give a few different properties of various DATA TYPES
 // Look for PROPERTIES that all cars have in common 
 // Include at least one FUNCTION
 // CALL function to create multiple cars 
+// Builder Code //
+// Declare a FUNCTION that takes PROPORTIES as PARAMETERS
+	// Use "this" keyword to create PROPERTIES for cars
+	// Use "this" keyword to create a FUNCTION
+	// Print an ending INITIALIZATION statement 
+//end
+
+
+
