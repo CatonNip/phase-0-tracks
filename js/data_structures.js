@@ -7,6 +7,10 @@ var horseNames = ["War Admiral", "American Pharoah","Sir Barton", "Gallant Fox"]
 horseColors.push("Yellow Ochre")
 horseNames.push("Bob Ross")
 
+// Create a key value data structure that will assign horseNames as the key and horseColors as the value.
+// Both lists should be the same length 
+// Since this code should work for any number of list items we should find a way to go through each item in the list.
+
 
 
 
