@@ -19,7 +19,7 @@ for (var i = 0; i < horseNames.length; i++){
 	horses[horseNames[i]] = horseColors[i]
 }
 
-// Driver Code //
+// Driver Code for Release 0 and 1//
 // To print lists
 console.log(horseColors)
 console.log(horseNames)
@@ -42,12 +42,27 @@ console.log(horses)
 	// Print an ending INITIALIZATION statement 
 //end
 
-function Car(make,year,isElectric) {
-	this.make =  make;
+function Car(makeModel,year,isElectric) {
+	this.makeModel =  makeModel;
 	this.year = year;
 	this.isElectric = isElectric;
 	this.drive = function() {console.log("VROOM VROOM");};
 	console.log("CAR INITIALIZATION COMPLETE!")	
 }
+
+// Driver Code for Release 2 //
+
+var newCar = new Car("Tesla Model S",2016,true);
+console.log(newCar);
+newCar.drive();
+
+var anotherNewCar = new Car("Toyota Corolla",2008,false);
+console.log(anotherNewCar);
+anotherNewCar.drive();
+
+var aBrandNewCar = new Car("DeLorean DMC-12",1981,false);
+console.log(aBrandNewCar);
+aBrandNewCar.drive();
+
 
 
