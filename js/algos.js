@@ -40,7 +40,13 @@ function longestElement(array) {
 
 //Release 1//
 function find_key_value_match(object1,object2) {
-
+	for (var i in object1){
+		if (object1.key === object2.key){
+			console.log(true)
+		} else {
+			console.log(false)
+		}
+	}
 }
 
 
@@ -58,5 +64,6 @@ function find_key_value_match(object1,object2) {
 // longestElement(test3);
 
 //Release 1//
-var testObject1 = {book: "Ready Player One", "age":33, food: "banana"};
+var testObject1 = {book: "Ready Player One",food: "banana"};
 var testObject2 = {"age":33, car:"BMW"};
+find_key_value_match(testObject1,testObject2)
