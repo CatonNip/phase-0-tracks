@@ -25,6 +25,13 @@
 		//ELSE the match is false
 	// Print results
 
+//Release 2//
+//Goals//
+
+//Psudocode//
+
+
+
 //Release 0//
 function longestElement(array) {
 	var longest = 0;
@@ -47,7 +54,7 @@ function findKeyValueMatch(object1,object2,key) {
 		}
 }
 
-
+//Release 2//
 
 //Driver Code//
 
@@ -62,15 +69,17 @@ function findKeyValueMatch(object1,object2,key) {
 // longestElement(test3);
 
 //Release 1//
-var testObject1 = {name: "Steven", age: 54};
-var testObject2 = {name: "Tamir", age: 54};
-findKeyValueMatch(testObject1,testObject2,"age");
+// var testObject1 = {name: "Steven", age: 54};
+// var testObject2 = {name: "Tamir", age: 54};
+// findKeyValueMatch(testObject1,testObject2,"age");
 
-var testObject3 = {name: "Paul", food:"Pizza"};
-var testObject4 = {name: "Paul", age: 54};
-findKeyValueMatch(testObject3,testObject4,"food");
+// var testObject3 = {name: "Paul", food:"Pizza"};
+// var testObject4 = {name: "Paul", age: 54};
+// findKeyValueMatch(testObject3,testObject4,"food");
 
-var testObject5 = {age: 54};
-var testObject6 = {name: "Tamir"};
-findKeyValueMatch(testObject5,testObject6,"name");
+// var testObject5 = {age: 54};
+// var testObject6 = {name: "Tamir"};
+// findKeyValueMatch(testObject5,testObject6,"name");
+
+//Release 2//
 
