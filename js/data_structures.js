@@ -67,7 +67,7 @@ aBrandNewCar.drive();
 // Release 3 Questions ANSWERED //
 // 1.) If you wanted to loop through the keys and values of an object, how would you do that? (There are a few ways to accomplish this, and some gotchas that can happen depending on your approach.)
 	//You can use a FOR loop that iterates though an object and prints that object plus it's property.
-//	(example for future reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+	//(example for future reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 // 2.) Are there advantages to using constructor functions to create objects? Disadvantages? 
 	// Objects made with the constructor functions need to have the same properties that can be a disadvantage or advantage
 	// depending on your needs for it. Constructor functions also let you share methods. A downside is that constructors are slower
