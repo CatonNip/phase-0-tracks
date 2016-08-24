@@ -25,5 +25,8 @@ function longestElement(array) {
 
 
 //Driver Code//
-var array = ["long phrase","longest phrase","longer phrase"];
-longestElement(array);
+var test1 = ["long phrase","longest phrase","longer phrase"];
+longestElement(test1);
+
+var test2 = ["WOOOF","MEOW","TWEET TWEET","MOO"];
+longestElement(test2);
