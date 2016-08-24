@@ -30,3 +30,6 @@ longestElement(test1);
 
 var test2 = ["WOOOF","MEOW","TWEET TWEET","MOO"];
 longestElement(test2);
+
+var test3 = ["Popcorn", "Banananananannananana", "Pancake","Oreo"];
+longestElement(test3);
