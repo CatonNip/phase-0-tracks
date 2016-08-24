@@ -11,6 +11,19 @@
 		// CONCENTRATE each STRING into the set VARIABLE
 	//Print the variable that should contain the longest element in the list
 
+function longestElement(array) {
+	var longest = 0;
+	var longestPhrase = "";
+	for (var i = 0; i < array.length; i++) {
+		if (array[i].length > longest) {
+			longest = array[i].length;
+			longestPhrase = array[i]
+		}
+	}
+	console.log(longestPhrase);
+}
 
 
-	//Driver Code//
+//Driver Code//
+var array = ["long phrase","longest phrase","longer phrase"];
+longestElement(array);
