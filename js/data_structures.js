@@ -4,8 +4,8 @@ var horseColors = ["Radiant Orchid", "Titanium White", "Cerulean", "Alizarin Cri
 // Set variable to a list of names
 var horseNames = ["War Admiral", "American Pharoah","Sir Barton", "Gallant Fox"];
 // Add code to add new colors and names to the horse_names and horse_colors list
-horseColors.push("Yellow Ochre")
-horseNames.push("Bob Ross")
+horseColors.push("Yellow Ochre");
+horseNames.push("Bob Ross");
 
 // Create a key value data structure that will assign horseNames as the key and horseColors as the value.
 // Both lists should be the same length 
@@ -14,10 +14,13 @@ horseNames.push("Bob Ross")
 // FOR LOOP and take the LENGHTH of list horseColors
 	// Declare incrementors
 	// Use BRACKET NOTATION to set the values of horseNames to be the KEY and index of horseColors to be the object VALUE.
-
-
+var horses = {};
+for (var i = 0; i < horseNames.length; i++){
+	horses[horseNames[i]] = horseColors[i]
+}
 
 // Driver Code //
 // To print lists
 console.log(horseColors)
 console.log(horseNames)
+console.log(horses)
