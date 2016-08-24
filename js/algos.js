@@ -27,10 +27,17 @@
 
 //Release 2//
 //Goals//
+//Write a FUNCTION that takes an integer for length, and builds and returns an array of strings of the given length.
+//The words should be of randomly varying length, with a minimum of 1 letter and a maximum of 10 letters.
+//Add driver code that does the following 10 times: 
+//generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
 
 //Psudocode//
-
-
+//Declare a FUNCTION that takes an INTERGER as a PARAMETER
+	//Declare an empty LIST so that we can PUSH the strings into it
+	//Declare a LIST of random words of varying lengths(or find a method that does this)
+	//FOR INT create that many number of elements and PUSH to empty List
+//print results
 
 //Release 0//
 function longestElement(array) {
