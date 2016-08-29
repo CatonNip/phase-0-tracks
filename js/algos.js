@@ -63,19 +63,29 @@ function findKeyValueMatch(object1,object2,key) {
 }
 
 //Release 2//
-function randomTestData(int){
-	var testDataArray = [];
-	var randomWords = ["a","df","sad","rtyu","sawer","serfed","vgfrtyh","weikndfr","thfuipsqe","qweryhfndg"];
-	var randomNumber = Math.floor((Math.random() * 10) + 1);
-	for (var i = 0; i < randomWords.length; i++) {
-		testDataArray.push(randomWords)
+function randomWords() {
+	var letters = "abcdefghijklmnopqrstuvwxyz";
+	return letters.charAt(Math.floor((Math.random() * letters.length)
+}
+
+function randomString(){
+	var length = Math.floor((Math.random() * 10) + 1);
+	var output = "";
+	for (var i =0; i < length; i++) {
+		output += randomWords();
 	}
-	console.log(testDataArray)
+}
+
+
+function randomTestData(int){
+	for (var i =0, array = []; i < int; i ++) {
+		var word = randomString();
+		array.push(Word);
+	}
+	console.log(array)
 }
 
 //Driver Code//
-
-//Release 0//
 // var test1 = ["long phrase","longest phrase","longer phrase"];
 // longestElement(test1);
 
@@ -98,6 +108,3 @@ function randomTestData(int){
 // var testObject6 = {name: "Tamir"};
 // findKeyValueMatch(testObject5,testObject6,"name");
 
-//Release 2//
-var testInt1 = 5
-randomTestData(testInt1)
