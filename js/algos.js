@@ -25,6 +25,21 @@
 		//ELSE the match is false
 	// Print results
 
+//Release 2//
+//Goals//
+//Write a FUNCTION that takes an integer for length, and builds and returns an array of strings of the given length.
+//The words should be of randomly varying length, with a minimum of 1 letter and a maximum of 10 letters.
+//Add driver code that does the following 10 times: 
+//generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
+
+//Psudocode//
+//Declare a FUNCTION that takes an INTERGER as a PARAMETER
+	//Declare an empty LIST so that we can PUSH the strings into it
+	//Declare a LIST of random words of varying lengths(or find a method that does this)
+	//FOR INT create that many number of elements and PUSH to empty List
+	//
+//print results
+
 //Release 0//
 function longestElement(array) {
 	var longest = 0;
@@ -39,15 +54,38 @@ function longestElement(array) {
 }
 
 //Release 1//
-function find_key_value_match(object1,object2) {
+function findKeyValueMatch(object1,object2,key) {
+		if (object1[key] == object2[key]){
+			console.log(true)
+		} else {
+			console.log(false)
+		}
+}
 
+//Release 2//
+function randomWords() {
+	var letters = "abcdefghijklmnopqrstuvwxyz";
+	return letters.charAt(Math.floor((Math.random() * letters.length)
+}
+
+function randomString(){
+	var length = Math.floor((Math.random() * 10) + 1);
+	var output = "";
+	for (var i =0; i < length; i++) {
+		output += randomWords();
+	}
 }
 
 
+function randomTestData(int){
+	for (var i =0, array = []; i < int; i ++) {
+		var word = randomString();
+		array.push(Word);
+	}
+	console.log(array)
+}
 
 //Driver Code//
-
-//Release 0//
 // var test1 = ["long phrase","longest phrase","longer phrase"];
 // longestElement(test1);
 
@@ -58,5 +96,15 @@ function find_key_value_match(object1,object2) {
 // longestElement(test3);
 
 //Release 1//
-var testObject1 = {book: "Ready Player One", "age":33, food: "banana"};
-var testObject2 = {"age":33, car:"BMW"};
+// var testObject1 = {name: "Steven", age: 54};
+// var testObject2 = {name: "Tamir", age: 54};
+// findKeyValueMatch(testObject1,testObject2,"age");
+
+// var testObject3 = {name: "Paul", food:"Pizza"};
+// var testObject4 = {name: "Paul", age: 54};
+// findKeyValueMatch(testObject3,testObject4,"food");
+
+// var testObject5 = {age: 54};
+// var testObject6 = {name: "Tamir"};
+// findKeyValueMatch(testObject5,testObject6,"name");
+
