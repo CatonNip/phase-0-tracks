@@ -51,13 +51,13 @@ until employees == 0
 	end
 
 	while input != vampire
-		p "What allerigies do you have? Please type 'done' to end the servey."
+		p "What allergies do you have? Please type 'done' to end the survey."
 		input = gets.chomp
 	end
 
 	puts "probably a vampire"
 	employees = employees - 1
-	p "#{employees} more employees to servey"
+	p "#{employees} more employees to survey"
 end
 p  "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
