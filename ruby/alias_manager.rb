@@ -1,23 +1,44 @@
 ####Pseudocode####
-# => Release 0
-#prompt the agent to input their name
-#save that name into a data stucture 
-#create small methods so you can link them together
-#translate if a letter within the data structure is a vowel or consonant
-#look up modual to transfer charaters and/or indexes of a data structure
-#make all of the inputs .downcase or .upcase to filter though inputs that might have both
+#INPUT:User Name Info
+#OUTPUT: Agent's name reversed
+#Declare a METHOD that gathers that agents real name
+	#Prompt USER for the FIRST name
+		#STORE the INPUT into a variable 
+			#IF that variable is 'quit'
+				#ABORT the program 
+			#End
+	#Prompt USER for Last name
+		#STORE the INPUT in a variable 
+			#IF the variable is 'quit'
+				#ABORT the program
+			#end
+	#Set agent's reversed name as a variable
+#end
 
-#I need to def methods that:
-	#gathers the user's name and convert it to a data structure
-	#tell me if an item on a data structure is a vowel
-	#tell me if an item on a data stucture is a consonant
-	#convert the user's original name into an alias 
-# => Release 1
-#This assigment just screams loops.
-	#Write a loop that ends when the user enters 'quit'
-# => Release 2
-#store the last entered name into a data structure 
-#print out original and new names
+#INPUT:letter
+#OUTPUT: shifted letters
+#Declare a METHOD that takes the name_string as a PARAMETER 
+	#set a STRING of vowels to a VRAIABLE 
+	#set a STRING of consonants to a VARIABLE 
+	#IF the string of VOWELS INCLUDES in the PARAMETER
+		#parameter are shifted by ONE
+	#ELSE IF CONSONANTS INCLUDES in the PARAMETER
+		#shift the constants by ONE
+	#ELSE
+		#just put the name_string
+	#end
+#end
+
+
+#INPUT:agent_real_name and vowels_consonatns methods
+#OUTPUT: fake_name
+#Declare a METHOD that creates the agent's alias
+	#set the agent_real_name SPLITED to a VARIABLE
+	#Write a BLOCK that for each LETTER in the fake_name array 
+		#update fake_name to EQUAL the vowels_consonants
+	#end
+	#Join the fake_name back together
+#end
 #######
 
 def agent_real_name
@@ -26,39 +47,36 @@ def agent_real_name
 			if firstname == 'quit'
 				abort
 			end
-# => here is where my code kept breaking until I compined the stings into a variable
 	puts "Now enter your last name or type 'quit' to end the program.."
 		lastname = gets.chomp.downcase
 			if lastname == 'quit'
 				abort
 			end
-	name = lastname + " " + firstname
+	reversed_name = lastname + " " + firstname
 end
 
-def agents_alias(agent_real_name)
+def vowels_consonants(name_string)
+	vowels = "aeioua"
+	consonants = "bcdfghjklmnpqrstvwxyzb"
+	if vowels.include?(name_string)
+		vowels[vowels.index(name_string) + 1]
+	elsif consonants.include?(name_string)
+ 		consonants[consonants.index(name_string) + 1]
+	else
+		name_string
+	end
+end
+
+def agents_alias
 	fake_name = agent_real_name.split('')
-	fake_name.length.times do |edit|
-		fake_name[edit] = vowels_consonants(fake_name[edit])
+	fake_name.length.times do |letter|
+		fake_name[letter] = vowels_consonants(fake_name[letter])
 	end
 	fake_name.join('')
 end
 
-def vowels_consonants(letter)
-	vowels = "aeiou"
-	consonants = "bcdfghjklmnpqrstvwxyz"
-	if vowels.include?(letter)
-		vowels[vowels.index(letter) + 1]
-	elsif consonants.include?(letter)
- 		consonants[consonants.index(letter) + 1]
-	else
-		letter
-	end
-end
 
 name = ""
 until name == 'quit'
-	p agents_alias(agent_real_name).capitalize
+	p agents_alias.capitalize
 end
-
-
-	
