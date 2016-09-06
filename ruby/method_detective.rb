@@ -8,7 +8,7 @@
 puts "iNvEsTiGaTiOn".swapcase
 # => “InVeStIgAtIoN”
 
-#"string".insert() other_str before the charater at the given index, modifying str.
+#"string".insert() other_str before the charter at the given index, modifying str.
 puts "zom".insert(1,'o')
 # => “zoom”
 
@@ -16,7 +16,7 @@ puts "zom".insert(1,'o')
 puts "enhance".center(20)
 # => "    enhance    "
 
-#"string".upcase replaces all lowercase alphabet charaters with upercase.
+#"string".upcase replaces all lowercase alphabet charters with uppercase.
 puts "Stop! You’re under arrest!".upcase
 # => "STOP! YOU’RE UNDER ARREST!"
 
