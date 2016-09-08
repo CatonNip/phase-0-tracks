@@ -1,4 +1,4 @@
-#paired with Lina
+#paired with Jesscodes
 class Puppy
 
 	def initialize
