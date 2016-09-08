@@ -8,5 +8,11 @@ class Santa
 	end
 
 	def eat_milk_and_cookies(cookie)
-		puts "That was a good #{cookie}!"
+		puts "That was a good #{cookie} cookie!"
+	end
 end 
+
+#driver code#
+Carl = Santa.new
+Carl.speak
+Carl.eat_milk_and_cookies("oatmeal")
