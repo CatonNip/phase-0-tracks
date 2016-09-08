@@ -37,8 +37,6 @@ Carl.eat_milk_and_cookies("oatmeal")
 Carl.get_mad_at("Vixen")
 p Carl.gender = "female"
 
-
-# santas = []
 #repetitive# 
 # santas << Santa.new("agender", "black")
 # santas << Santa.new("female", "Latino")
@@ -49,11 +47,12 @@ p Carl.gender = "female"
 # santas << Santa.new("N/A", "N/A")
 
 #re-factor"
-# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-# until santas.length == 10
-# 	santas << Santa.new(example_genders.sample,example_ethnicities.sample)
-# end
+until santas.length == 10
+	santas << Santa.new(example_genders.sample,example_ethnicities.sample)
+end
 
-# p santas
+p santas
