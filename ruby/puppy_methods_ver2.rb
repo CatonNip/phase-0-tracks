@@ -15,8 +15,13 @@ class Puppy
   end
 
   def dog_years(human_years)
-  	p human_years * 7
+  	puts human_years * 7
   end
+
+  def play_dead
+  	puts "*play dead*"
+  end
+
 end
 
 #Driver Code#
@@ -25,3 +30,4 @@ Spot.fetch("ball")
 Spot.speak(2)
 Spot.roll_over
 Spot.dog_years(4)
+Spot.play_dead
