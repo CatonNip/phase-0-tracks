@@ -18,7 +18,7 @@ class Santa
 	end
 
 	def celebrate_birthday
-		@age + 1
+		@age += 1
 		puts "Santa is #{@age} years old! Happy birthday."
 	end
 
@@ -36,6 +36,7 @@ Carl.speak
 Carl.eat_milk_and_cookies("oatmeal")
 Carl.get_mad_at("Vixen")
 p Carl.gender = "female"
+Carl.celebrate_birthday
 
 #repetitive# 
 # santas << Santa.new("agender", "black")
@@ -51,8 +52,12 @@ santas = []
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-until santas.length == 10
+until santas.length == 5
 	santas << Santa.new(example_genders.sample,example_ethnicities.sample)
 end
 
-p santas
+santas.each do |santa|
+	puts santa.age
+	puts santa.gender
+	puts santa.ethnicity
+end
