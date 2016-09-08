@@ -28,10 +28,18 @@ class Puppy
 
 end
 
+class Kangaroo
+
+	def initialize
+		puts "Initializing Kangaroo instance!"
+	end 
+
+end
+
 #Driver Code#
-Spot = Puppy.new 
-Spot.fetch("ball")
-Spot.speak(2)
-Spot.roll_over
-Spot.dog_years(4)
-Spot.play_dead
+# Spot = Puppy.new 
+# Spot.fetch("ball")
+# Spot.speak(2)
+# Spot.roll_over
+# Spot.dog_years(4)
+# Spot.play_dead
