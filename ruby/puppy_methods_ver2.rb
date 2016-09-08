@@ -66,3 +66,8 @@ kangaroo_array = []
 # #option 2
 50.times {kangaroo_array << Kangaroo.new}
 p kangaroo_array
+
+kangaroo_array.each do |kangaroo|
+	kangaroo.hops 
+	kangaroo.kick(1)
+end
