@@ -19,3 +19,7 @@
 # Jump
 # Hug
 # Paw
+# Roll Over 
+# Bark
+# Spin
+# Fetch
