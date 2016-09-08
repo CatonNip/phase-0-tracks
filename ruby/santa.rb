@@ -7,4 +7,6 @@ class Santa
 		puts "Ho ho ho! Happy holidays!"
 	end
 
+	def eat_milk_and_cookies(cookie)
+		puts "That was a good #{cookie}!"
 end 
