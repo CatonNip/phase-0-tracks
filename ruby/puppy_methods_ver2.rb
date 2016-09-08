@@ -5,8 +5,12 @@ class Puppy
     toy
   end
 
+  def speak(int)
+  	int.times {puts "Woof!"}
+  end	 
 end
 
 #Driver Code#
 Spot = Puppy.new 
 Spot.fetch("ball")
+Spot.speak(2)
