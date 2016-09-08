@@ -17,6 +17,15 @@ class Santa
 end 
 
 #driver code#
-Carl = Santa.new
-Carl.speak
-Carl.eat_milk_and_cookies("oatmeal")
+# Carl = Santa.new
+# Carl.speak
+# Carl.eat_milk_and_cookies("oatmeal")
+santas = []
+santas << Santa.new("agender", "black")
+santas << Santa.new("female", "Latino")
+santas << Santa.new("bigender", "white")
+santas << Santa.new("male", "Japanese")
+santas << Santa.new("female", "prefer not to say")
+santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
+santas << Santa.new("N/A", "N/A")
+p santas
