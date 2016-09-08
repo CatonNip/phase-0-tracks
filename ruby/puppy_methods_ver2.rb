@@ -13,6 +13,10 @@ class Puppy
   def roll_over
   	puts "*rolls over*"
   end
+
+  def dog_years(human_years)
+  	p human_years * 7
+  end
 end
 
 #Driver Code#
@@ -20,3 +24,4 @@ Spot = Puppy.new
 Spot.fetch("ball")
 Spot.speak(2)
 Spot.roll_over
+Spot.dog_years(4)
