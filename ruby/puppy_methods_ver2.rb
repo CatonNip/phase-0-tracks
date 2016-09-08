@@ -1,6 +1,10 @@
 #Pair with Jesscodes#
 class Puppy
 
+	def initialize
+		puts "Initializing puppy instance...BEEP BEEP BOOP BOPP"
+	end
+
   def fetch(toy)
     puts "I brought back the #{toy}!"
     toy
