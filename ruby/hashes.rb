@@ -1,4 +1,3 @@
-##############
 #pseudocode
 #Create hash 
 #As the user to input clients' data 
@@ -7,7 +6,7 @@
 #Print out the hash when the user finishes questions
 #Ask user if any changes need to be made
 #Let the user change any input needed 
-#############
+
 #ask user for client info though a method just to make things a little easier
 def get_client_info_str(question)
 	puts question
