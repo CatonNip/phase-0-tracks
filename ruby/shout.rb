@@ -1,18 +1,15 @@
-###OLD SHOUT CODE###
 # module Shout
 #   def self.yell_angrily(words)
 #     words + "!!!" + " :("
 #   end
 
-#   def self.yelling_happily(words)
-#   	words + "<3" + " ;D"
-#   end
+#   def self.yell_happily(words)
+#   	words + "<3"
 # end
 
-# #DRIVER CODE
+# #Driver Code#
 # p Shout.yell_angrily("DARN!")
 # p Shout.yelling_happily("YAY!")
-#################
 
 #NEW SHOUT CODE
 
@@ -35,15 +32,3 @@ p donald.shouting("Make AMERRRICA GREAT AGAIN")
 
 toxic = Angry_Gamers.new
 p toxic.shouting("UGH THIS TEAM SUCKS")
-
-
-
-
-
-
-
-
-
-
-
-
