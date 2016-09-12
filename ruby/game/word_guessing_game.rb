@@ -30,5 +30,11 @@
 #end
 
 class Game
+	def initialize(word)
+		@word = Array.new(word.chars)
+		@guess_conter = word.length
+		@is_over = false
+		@players_guess = Array.new(word.length) {"_"}.join('')
+	end
 
 end
