@@ -47,4 +47,9 @@ class Game
 		@players_guess << letter
 	end	
 
+	def wrong_letter(letter)
+		!@word =~ letter
+		puts "GUUUURLLLL you done ready to have hereses" #rupaul's drag race quote haha
+	end
+
 end
