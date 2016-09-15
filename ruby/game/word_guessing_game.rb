@@ -52,4 +52,29 @@ class Game
 		puts "GUUUURLLLL you done ready to have hereses" #rupaul's drag race quote haha
 	end
 
+	def guess_limit
+		if @players_guess.length == @guess_conter
+			@is_over = true
+		else
+			false
+		end
+	end
+
+	def game_progress
+		p @players_output
+	end
 end
+
+#Driver Code#
+puts "Hello and welcome to the game of...VIVIMAN! Player 1 please enter a word for player 2 to guess."
+
+
+
+
+
+
+
+
+
+
+
