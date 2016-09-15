@@ -4,8 +4,8 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# Loads a file that can be used relative to our current file.
+# "Require" requires the full path name. 
 require_relative 'state_data'
 
 class VirusPredictor
