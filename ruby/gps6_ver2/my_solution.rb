@@ -6,6 +6,9 @@
 # EXPLANATION OF require_relative
 # Loads a file that can be used relative to our current file.
 # "Require" requires the full path name. 
+
+# Constant:
+# Acts like a global variable. All elements of the program has access to the constant.
 require_relative 'state_data'
 
 class VirusPredictor
