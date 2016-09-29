@@ -25,6 +25,11 @@ SQL
 db.execute(user_table_cmd)
 
 #Create a METHOD to prompt user and STORES that information into a database
+def user_interface 
+	prints "Hello there! Welcome to the security bot 5000."
+	prints "What is your name?"
+
+end
 
 #Create METHOD to figure out the time 
 	#LOOKS for current time 
