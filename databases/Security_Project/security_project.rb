@@ -24,7 +24,8 @@ SQL
 #CREATES a new table
 db.execute(user_table_cmd)
 
-def new_user(dbs, name, age, email, location, social_media, time)
-	db.execute(db)
-end
+#Create a METHOD to prompt user and STORES that information into a database
+
+#Create METHOD to figure out the time 
+	#LOOKS for current time 
 	
