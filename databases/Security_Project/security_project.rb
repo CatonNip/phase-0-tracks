@@ -10,11 +10,11 @@ require "sqlite3"
 db = SQLite3:DATABASE.new("security_project.db")
 
 user_table_cmd = <<-SQL
-	CREATE TABLE IF NOT EXISTS user(
+	CREATE TABLE IF NOT EXISTS users(
 		id 	INTEGER PRIMARY KEY,
-		name 	VARCHAR(255),
+		first_name 	VARCHAR(255),
+		last_name VARCHAR(255),
 		age INT,
-		email VARCHAR(255),
 		location VARCHAR(255),
 		social_media VARCHAR(255),
 		time VARCHAR(255),
@@ -24,11 +24,9 @@ SQL
 #CREATES a new table
 db.execute(user_table_cmd)
 
-#Create a METHOD to prompt user and STORES that information into a database
-def user_interface 
-	prints "Hello there! Welcome to the security bot 5000."
-	prints "What is your name?"
-
+#Create a METHOD to STORE information into a database
+def create_user (db, first_name, last_name, age, location, social_media,time,date)
+	db.execute("INSERT INTO users (first_name, last_name, age, location, social_media, time, date) values (?,?,?,?,?,?,?)",[first_name,last_name,age,location,social_media,time,date])
 end
 
 #Create METHOD to figure out the time 
