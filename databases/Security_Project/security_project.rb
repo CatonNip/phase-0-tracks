@@ -7,7 +7,8 @@
 
 require "sqlite3"
 
-db = SQLite3:DATABASE.new("security_project.db")
+db = SQLite3::Database.new('security_project.db')
+db.results_as_hash = true
 
 user_table_cmd = <<-SQL
 	CREATE TABLE IF NOT EXISTS users(
@@ -29,6 +30,13 @@ def create_user (db, first_name, last_name, age, location, social_media,time,dat
 	db.execute("INSERT INTO users (first_name, last_name, age, location, social_media, time, date) values (?,?,?,?,?,?,?)",[first_name,last_name,age,location,social_media,time,date])
 end
 
-#Create METHOD to figure out the time 
-	#LOOKS for current time 
+create_user(db, "Jane","Doe",25,"San Francisco","Facebook","Noon","December 25,1999")
+
+print "Security Checker 5000 booting up."
+loop do
+	puts " Please enter your first name."
+	first_name = gets.chomp.to_s
+	puts "What's your last name?"
+	last_name = gets.chomp.to_s
+end
 	
