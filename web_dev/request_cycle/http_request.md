@@ -20,3 +20,7 @@ https://www.smartlabsoftware.com/ref/http-status-codes.htm
 http://www.w3schools.com/tags/ref_httpmethods.asp
 GET - Requests data from a specified resource
 POST - Submits data to be processed to a specified resource
+
+#A cookie is?
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+A cookie is a small piece of data that the server sends to the user's browser.
